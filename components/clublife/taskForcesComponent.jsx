@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import data from "@/content/clublife.json";
-import Title from "../ui/title";
+import Title from "../ui/Title";
 import { motion } from 'framer-motion'
 
 const taskForcesComponent = () => {

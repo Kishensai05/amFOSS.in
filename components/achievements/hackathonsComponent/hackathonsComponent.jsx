@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Hackathons from "./hackathons";
-import Title from "@/components/ui/title";
-import ParallaxComponent from "../parallaxComponent";
+import Title from "@/components/ui/Title";
+import ParallaxComponent from "../ParallaxComponent";
 
 export default function HackathonsComponent() {
   const ref = useRef(null);

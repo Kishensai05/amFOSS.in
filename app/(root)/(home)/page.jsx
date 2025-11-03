@@ -3,24 +3,24 @@ import React from 'react'
 import herotext from '@/content/homehero.json'
 import whoweare from '@/content/whoweare.json'
 import Contact from '../contact/page';
-import Title from '@/components/ui/title'
-import Dynamicard from '@/components/ui/dynamicard'
+import Title from '@/components/ui/Title'
+import Dynamicard from '@/components/ui/DynamicCard'
 import whatwedo from '@/content/whatwedo.json'
-import Achievement from '@/components/ui/achievement'
+import Achievement from '@/components/ui/Achievement'
 import achievement from '@/content/firsttodo.json'
 import { motion } from 'framer-motion'
 import companies_data from "@/content/companies";
 import summerschools_data from "@/content/summerschools";
-import InfiniteSlider from '@/components/achievements/infiniteSlider';
+import InfiniteSlider from '@/components/achievements/InfiniteSlider';
 import ScrollDownButton from '@/components/shared/ScrollDown';
 import useScrollRef from '@/lib/hooks/useScrollRef';
 import useAnimationVariants from '@/lib/hooks/useAnimationVariants';
 
-const page = () => {
-  const baseText = herotext.hero;
+const HomePage = () => {
+  const heroHeading = herotext.hero;
   const { scrollRef } = useScrollRef();
   const { 
-    clubLife1Variants: clubLife1Varients,
+    clubLife1Variants: clubLife1Variants,
     clubLife2Variants: clubLife2Varients,
     imageVariants: imageVarients,
     textAnimationVariants
@@ -38,7 +38,7 @@ const page = () => {
     <div className="flex-col flex-center justify-center overflow-clip items-center">
       <div className="max-sm:py-8 md:text-left text-center max-md:justify-center md:py-32 py-72 md:h-screen mx-auto max-w-screen-2xl px-6 xs:px-8 sm:px-16 flex items-center">
         <h1 className="text-7xl max-md-custom:text-5xl max-sm:text-3xl tracking-wide leading-[110px] md:text-left">
-          {baseText.split(" ").map((word, index) => (
+          {heroHeading.split(" ").map((word, index) => (
             <motion.span
               key={index}
               variants={textAnimationVariants}
@@ -70,7 +70,7 @@ const page = () => {
             </motion.div>
           </div>
           <motion.div className="col-span-2 max-md-grid:col-span-3 col-start-2"
-            variants={clubLife1Varients}
+            variants={clubLife1Variants}
             transition={{ duration: 0.5, delay: 0.05 }}
             initial="initial"
             whileInView="animate"
@@ -204,4 +204,4 @@ const page = () => {
   )
 }
 
-export default page
+export default HomePage;

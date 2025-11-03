@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Talks from "./talks.jsx";
-import Title from "@/components/ui/title.jsx";
-import ParallaxComponent from "../parallaxComponent.jsx";
+import Title from "@/components/ui/Title.jsx";
+import ParallaxComponent from "../ParallaxComponent.jsx";
 
 export default function TalksComponent() {
   const ref = useRef(null);

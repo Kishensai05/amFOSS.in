@@ -1,5 +1,5 @@
 import Image from "next/image"
-import UnderlineEffect from "../underlineEffect";
+import UnderlineEffect from "../UnderlineEffect";
 import data from "@/content/hackathonWinners.json";
 
 export default function hackathons(){

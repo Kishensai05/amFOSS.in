@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import SmoothScrolling from "@/components/shared/SmoothScroll";
-import Bg from "@/components/shared/bg"
+import Bg from "@/components/shared/Bg"
 const layout = ({ children }) => {
   return (
     <>

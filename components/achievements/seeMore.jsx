@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const seeMore = ({showContent, toggle}) => {
+const SeeMore = ({showContent, toggle}) => {
   return (
     <>
       <buttton onClick={showContent}>
@@ -20,4 +20,4 @@ const seeMore = ({showContent, toggle}) => {
   );
 };
 
-export default seeMore;
+export default SeeMore;

@@ -9,8 +9,8 @@ import ScrollDownButton from "@/components/shared/ScrollDown";
 import OpenSourceComponent from "@/components/achievements/openSourceComponent/openSourceComponent";
 import useScrollRef from '@/lib/hooks/useScrollRef';
 
-const page = () => {
-  const baseText = "ACHIEVEMENTS";
+const AchievementsPage = () => {
+  const pageTitle = "ACHIEVEMENTS";
   const { scrollRef } = useScrollRef();
 
   return (
@@ -18,7 +18,7 @@ const page = () => {
       <div className="flex-col flex-center justify-center items-center">
         <div className="max-sm:py-8 md:text-left text-center max-md:justify-center md:py-32 py-72 md:h-screen mx-auto max-w-screen-2xl px-6 xs:px-8 sm:px-16 flex items-center">
           <h1 className="text-7xl max-md-custom:text-5xl max-sm:text-3xl tracking-wide leading-[110px]">
-            {baseText.split("").map((word, index) => (
+            {pageTitle.split("").map((word, index) => (
               <motion.span
                 key={index}
                 variants={{
@@ -57,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AchievementsPage;

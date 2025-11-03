@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Title from "@/components/ui/title";
-import MemberCard from "@/components/team/memberCard";
+import Title from "@/components/ui/Title";
+import MemberCard from "@/components/team/MemberCard";
 import data from "@/content/team.json";
 import members from "@/content/members.json";
 import alumni from "@/content/alumni.json";
@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 import { useResponsiveGrid } from "@/lib/hooks/useResponsiveGrid";
 
 const MembersAndAlumni = ({ contentFor }) => {
-  const dataFinal = contentFor === "members" ? members : alumni;
+  const teamData = contentFor === "members" ? members : alumni;
   const { visibleMembers, showAllMembers, toggleMembersVisibility } =
-    useResponsiveGrid(dataFinal);
+    useResponsiveGrid(teamData);
 
   return (
     <>

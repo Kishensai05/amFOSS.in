@@ -1,8 +1,8 @@
 import React from "react";
 import data from "@/content/gallery.json";
-import Title from "../ui/title";
+import Title from "../ui/Title";
 import { motion } from "framer-motion";
-import Slider from "./slider";
+import Slider from "./Slider";
 
 const Component1 = () => {
   const galleryVariants={

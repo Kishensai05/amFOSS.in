@@ -1,5 +1,5 @@
 import data from "@/content/openSource.json";
-import UnderlineEffect from "../underlineEffect";
+import UnderlineEffect from "../UnderlineEffect";
 
 export default function OpenSource() {
     return (

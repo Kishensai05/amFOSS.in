@@ -1,6 +1,6 @@
 import React from "react";
 import data from "@/content/ourstory.json";
-import Title from "../ui/title";
+import Title from "../ui/Title";
 import { motion } from "framer-motion";
 
 const Component2 = () => {

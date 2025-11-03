@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import TeamHero from "@/components/team/teamHero";
-import MembersAndAlumni from "@/components/team/membersAndAlumni";
+import TeamHero from "@/components/team/TeamHero";
+import MembersAndAlumni from "@/components/team/MembersAndAlumni";
 import { motion } from 'framer-motion'
 import Contact from "../contact/page";
 import ScrollDownButton from "@/components/shared/ScrollDown";
 import useScrollRef from '@/lib/hooks/useScrollRef';
 import useAnimationVariants from '@/lib/hooks/useAnimationVariants';
 
-const page = () => {
-  const baseText = "MEET THE TEAM";
+const TeamPage = () => {
+  const pageTitle = "MEET THE TEAM";
   const { scrollRef } = useScrollRef();
   const { imageVariants: imgVariants, textAnimationVariants } = useAnimationVariants();
   return (
@@ -17,7 +17,7 @@ const page = () => {
       <div className="flex-col flex-center justify-center items-center">
         <div className="max-sm:py-8 md:text-left text-center max-md:justify-center md:py-32 py-72 md:h-screen mx-auto max-w-screen-2xl px-6 xs:px-8 sm:px-16 flex items-center">
           <h1 className="text-7xl max-md-custom:text-5xl max-sm:text-3xl tracking-wide leading-[110px]">
-            {baseText.split(" ").map((word, index) => (
+            {pageTitle.split(" ").map((word, index) => (
               <motion.span
                 key={index}
                 variants={textAnimationVariants}
@@ -59,4 +59,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TeamPage;

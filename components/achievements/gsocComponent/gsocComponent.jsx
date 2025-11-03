@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import data from "@/content/gsoc.json";
 import Gsoc from "./gsoc";
-import Title from "@/components/ui/title";
-import ParallaxComponent from "../parallaxComponent";
+import Title from "@/components/ui/Title";
+import ParallaxComponent from "../ParallaxComponent";
 
 export default function GSOCComponent() {
   const ref = useRef(null);

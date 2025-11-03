@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../ui/title";
+import Title from "../ui/Title";
 import data from "@/content/clublife.json";
 import {motion} from 'framer-motion';
 
